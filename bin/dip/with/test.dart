@@ -24,8 +24,9 @@ class OutlookService implements IMessage {
   }
 }
 
+
 void main() {
   // final emailService = Email(OutllokService());
-  final emailService = Email(GmailService());
+  final emailService = Email(GmailService());//constructor injection
   emailService.sendEmail('title', 'hello');
 }

@@ -1,4 +1,4 @@
-abstract class IPayment implements ICreditCardPayment {}
+//abstract class IPayment implements ICreditCardPayment {}
 
 class Payment implements CreditCardPayment,IosPayment {
   @override

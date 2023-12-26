@@ -26,10 +26,19 @@ class SeniorEmployee extends Employee {
     return ((salary / 20) / 8) * hours*2;
   }
 }
+class mid extends Employee {
+  mid(
+      {required super.id, required super.name, required super.salary});
+
+  @override
+  double calcOverTime(double hours) {
+    return ((salary / 20) / 8) * hours*2;
+  }
+}
 
 void main() {
-  final emp1 = JuniorEmployee(id: '1', name: "Farah", salary: 6000);
-  final emp2= SeniorEmployee(id: '1', name: "Farah", salary: 6000);
+  final emp1 = JuniorEmployee(id: '1', name: "FarahJ", salary: 6000);
+  final emp2= SeniorEmployee(id: '1', name: "FarahS", salary: 6000);
   print('overTime=${emp1.calcOverTime(10)}');
   print('overTime=${emp2.calcOverTime(10)}');
 }
